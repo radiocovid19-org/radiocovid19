@@ -18,7 +18,7 @@ sidebar_name = "Modélisation pour prédiction des masques"
 #___________________________________________________________________________________________________________________________________
 #chargement du dataframe
 
-df=pd.read_csv("data/metadata.csv",index_col=0)
+df=pd.read_csv("streamlit_app/assets/metadata.csv",index_col=0)
 
 #____________________________________________________________________________________________________________________________________
 
