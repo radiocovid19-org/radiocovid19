@@ -41,7 +41,6 @@ def run():
     @st.cache_resource
     def load_model(url):
         return tf.keras.saving.load_model(url)
-    
     mod_classification = load_model('./streamlit_app/assets/models/classification_VGG16_special_True_clahe')
     mod_segmentation   = load_model('./streamlit_app/assets/models/mask_detection_20240130')
 
@@ -50,13 +49,6 @@ def run():
         st.session_state.prev_img = None
     if 'uploaded_img' not in st.session_state:
         st.session_state.uploaded_img = None
-    
-    # Chargement des modèles
-    @st.cache_resource
-    def load_model(url):
-        return tf.keras.saving.load_model(url)
-    mod_classification = load_model('./streamlit_app/assets/models/classification_VGG16_special_True_clahe')
-    mod_segmentation   = load_model('./streamlit_app/assets/models/mask_detection_20240130')
 
     # Charge une feuille de style propre à la DEMO
     with open("streamlit_app/tabs/radiocovid19.css", "r") as f:        
@@ -64,6 +56,7 @@ def run():
     st.markdown(f"<style>{style}</style>", unsafe_allow_html=True)
 
     st.title(title)
+    st.text("Ceci est une démonstration d'un projet de Data Science et non un réel outil de diagnostique.")
 
     col0, col00 = st.columns([4, 1])
     
@@ -107,18 +100,15 @@ def run():
     elif is_image_changee:
         st.session_state.img = selected_img
     img = st.session_state.img
-  
+
+    st.markdown("---")
+    
     # Affichage de la partie basse avec la radio originale, la radio modifiée,
     # et le panneau de commande
     col1, col2, col3 = st.columns(3)
 
     with col1:
         # Col 1 : image originale
-        # Soumaya :
-        #  - Bouton pour charger une image
-        #  - Afficher l'image (chargée ou sélectionnée dans la liste image_select)
-        #  - Charger le modèle de segmentation
-        #  - Segmenter l'image -> mask
         st.image(img, use_column_width=True)
 
     with col2:
@@ -177,7 +167,6 @@ def run():
                                                  masking=False,
                                                  egalisation=egalisation,
                                                  cropping=cropping)
-
                 st.text(log)
                 
                 if tog_covid:
