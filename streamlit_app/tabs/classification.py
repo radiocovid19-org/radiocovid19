@@ -518,10 +518,13 @@ que des effets de la COVID sont souvent constatés.""", icon='✅')
                  .style.format(precision=2),
                 use_container_width = True)
     st.markdown("Le modèle qui donne les meilleurs résultats est le modèle utilisant un modèle préentraîné VGG16.")
+
     
     st.markdown("### Définition du seuil non-COVID / COVID")
     st.image('streamlit_app/assets/classification_performance-ROC.png')
     st.markdown("La valeur de seuil qu permet une séparation optimale des cas non COVID des cas COVID est : **0.377**.")
+    st.success("""C'est à partir de ce seuil que le voyant d'alerte COVID passera de vert au rouge 
+dans notre application **RadioCovid19**.""", icon='✅')
 
 
     st.markdown("### Matrices de confusion")
