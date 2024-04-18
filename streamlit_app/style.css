@@ -1,0 +1,105 @@
+SECTION.main
+    {
+    padding-top: 2.875rem;
+    }
+
+h1,
+h2,
+h3,
+h4 {
+  color: #000000;
+  padding-top: 1ex;  
+}
+
+code {
+  color: #000000;
+}
+
+#MainMenu {
+  display: none;
+}
+
+div[data-testid="stDecoration"] {
+  display: none;
+}
+
+footer {
+  display: none;
+}
+
+/* Radio buttons */
+
+.st-cc {
+  color: black;
+  font-weight: 500;
+}
+
+/* Sidebar */
+
+section[data-testid="stSidebar"] > div {
+  background-color: #50B4C8;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+section[data-testid="stSidebar"] button[title="View fullscreen"] {
+  display: none;
+}
+
+section[data-testid="stSidebar"] button[kind="icon"] {
+  display: none;
+}
+
+section[data-testid="stSidebar"] .st-bk {
+  background-color: white;
+}
+
+section[data-testid="stSidebar"] .st-c0 {
+  background-color: none;
+}
+
+section[data-testid="stSidebar"] hr {
+  margin-top: 30px;
+  border-color: white;
+  width: 50px;
+}
+
+section[data-testid="stSidebar"] h2 {
+  color: white;
+}
+
+/* Images */
+
+button[title="View fullscreen"] {
+  display: none;
+}
+
+/* hr */
+
+hr {
+  width: 200px;
+  border-width: 5px;
+  border-color: #50B4C8;
+  margin-top: 0px;
+}
+
+/* First Page */
+
+section[tabindex="0"] .block-container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* Tabs */
+div[data-testid="stTab"]
+    {
+    border-bottom: 2.5px solid rgba(49, 51, 63, 0.1);
+    padding-bottom: 1em;        
+    }        
+
+/* ClassificationTab : Matrices de confusion */
+table thead tr:first-child th.index_name.level0,
+table th.col_heading.level0 {   
+    background-color: rgb(168, 218, 227);
+    font-weight: normal;
+}

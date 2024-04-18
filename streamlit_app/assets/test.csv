@@ -1,0 +1,21 @@
+,,Preprocessing,Preprocessing,Résultats (jeu de validation),Résultats (jeu de validation),Résultats (jeu de validation),image
+,,Masquage,Recadrage,Nb époques,Perte,Accuracy,
+Modèle,Test,,,,,,
+VGG16,vgg16.1,Sans,Non,13,0.1015,0.9675,../data/COVID/images/COVID-19.png
+VGG16,vgg16.2,Sans,Oui,6,0.2209,0.9175,../data/COVID/images/COVID-19.png
+VGG16,vgg16.3,Dataset,Non,10,0.3024,0.8745,../data/COVID/images/COVID-19.png
+VGG16,vgg16.4,Dataset,Oui,6,0.3229,0.868,../data/COVID/images/COVID-19.png
+VGG16,vgg16.5,Spécifique,Non,12,0.2257,0.9105,../data/COVID/images/COVID-19.png
+VGG16,vgg16.6,Spécifique,Oui,11,0.221,0.92,../data/COVID/images/COVID-19.png
+VGG19,vgg19.1,Sans,Non,8,0.1101,0.961,../data/COVID/images/COVID-19.png
+VGG19,vgg19.2,Sans,Oui,8,0.1993,0.921,../data/COVID/images/COVID-19.png
+VGG19,vgg19.3,Dataset,Non,4,0.383,0.8335,../data/COVID/images/COVID-19.png
+VGG19,vgg19.4,Dataset,Oui,4,0.3416,0.856,../data/COVID/images/COVID-19.png
+VGG19,vgg19.5,Spécifique,Non,11,0.2817,0.894,../data/COVID/images/COVID-19.png
+VGG19,vgg19.6,Spécifique,Oui,4,0.2637,0.9005,../data/COVID/images/COVID-19.png
+Xception,xception.1,Sans,Non,13,0.1836,0.9285,../data/COVID/images/COVID-19.png
+Xception,xception.2,Sans,Oui,17,0.2437,0.906,../data/COVID/images/COVID-19.png
+Xception,xception.3,Dataset,Non,2,0.4174,0.813,../data/COVID/images/COVID-19.png
+Xception,xception.4,Dataset,Oui,2,0.4082,0.8115,../data/COVID/images/COVID-19.png
+Xception,xception.5,Spécifique,Non,9,0.3349,0.867,../data/COVID/images/COVID-19.png
+Xception,xception.6,Spécifique,Oui,12,0.2909,0.882,../data/COVID/images/COVID-19.png

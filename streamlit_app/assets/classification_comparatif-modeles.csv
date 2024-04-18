@@ -1,0 +1,20 @@
+Modèle;;Preprocessing;;Résultats (jeu de validation);;
+Core modèle utilisé;Nom du modèle;Type de masque appliqué;Recadrage sur la région pulmonaire;Nombre d’époques;Perte;Accuracy
+VGG16;vgg16.1;Aucun;Sans recadrage;13;0.1015;0.9675
+VGG16;vgg16.2;Aucun;Avec recadrage;6;0.2209;0.9175
+VGG16;vgg16.3;Masque du dataset;Sans recadrage;10;0.3024;0.8745
+VGG16;vgg16.4;Masque du dataset;Avec recadrage;6;0.3229;0.868
+VGG16;vgg16.5;Masque spécifique;Sans recadrage;12;0.2257;0.9105
+VGG16;vgg16.6;Masque spécifique;Avec recadrage;8;0.221;0.92
+VGG19;vgg19.1;Aucun;Sans recadrage;8;0.1101;0.961
+VGG19;vgg19.2;Aucun;Avec recadrage;8;0.1993;0.921
+VGG19;vgg19.3;Masque du dataset;Sans recadrage;4;0.383;0.8335
+VGG19;vgg19.4;Masque du dataset;Avec recadrage;4;0.3416;0.856
+VGG19;vgg19.5;Masque spécifique;Sans recadrage;11;0.2817;0.894
+VGG19;vgg19.6;Masque spécifique;Avec recadrage;4;0.2637;0.9005
+Xception;xception.1;Aucun;Sans recadrage;13;0.1836;0.9285
+Xception;xception.2;Aucun;Avec recadrage;17;0.2437;0.906
+Xception;xception.3;Masque du dataset;Sans recadrage;2;0.4174;0.813
+Xception;xception.4;Masque du dataset;Avec recadrage;2;0.4082;0.8115
+Xception;xception.5;Masque spécifique;Sans recadrage;9;0.3349;0.867
+Xception;xception.6;Masque spécifique;Avec recadrage;12;0.2909;0.882

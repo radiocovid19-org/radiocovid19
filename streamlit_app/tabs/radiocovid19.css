@@ -1,0 +1,79 @@
+/* Feuille de style propre à la page radiocovid19.py */
+
+:root {
+    --background-color: #000000 !important;
+    --text-color: #FFFFFF       !important;
+    }
+
+BODY {
+    background-color: var(--background-color);
+    }
+
+SECTION.main {
+    background-color: var(--background-color);
+    padding-top: 0;
+    }
+
+H1, H2, H3, H4 {
+    color: var(--text-color);
+    }
+    
+P {
+    color: var(--text-color);
+    }
+
+.container {
+    background-color: var(--background-color);
+    }
+
+
+/* FileUploader utilisé dans la tabs RadioCovid19 */
+div[data-testid="stFileUploader"]
+    {
+    }
+
+section[data-testid="stFileUploadDropzone"]
+    {
+    /* Même hauteur que les radios */
+    height: 6rem;
+    border: 1px solid #50B4C8;
+    background-color: #000000;
+    }
+
+div[data-testid="stFileUploader"] div[data-testid="stFileDropzoneInstructions"]
+    {
+    font-size: 60%;
+    }
+
+div[data-testid="stFileUploader"] div[data-testid="stFileDropzoneInstructions"] small
+    {
+    font-size: 90%;
+    }
+
+div[data-testid="stFileUploader"] div[data-testid="stFileDropzoneInstructions"] button
+    {
+    border-color: rgba(255, 255, 255, 0.4);
+    }
+
+section[data-testid="stFileUploadDropzone"] + DIV
+    {
+    display: none;
+    }
+
+/* Modification apparence de la liste déroulante */
+label[disabled] div p
+    {
+    color: rgba(255,255,255, 0.4);
+    }
+
+div[data-testid="stSelectbox"] div.st-cv
+    {
+    background-color: #000000;
+    }
+
+/* Modification apparence de la zone de log */
+div[data-testid="stVerticalBlockBorderWrapper"]
+    {
+    border-color : #50B4C8;
+    }
+    
