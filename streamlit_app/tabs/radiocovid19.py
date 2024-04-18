@@ -41,8 +41,9 @@ def run():
     @st.cache_resource
     def load_model(url):
         return tf.keras.saving.load_model(url)
+    
     # mod_classification = load_model('./streamlit_app/assets/models/classification_VGG16_special_True_clahe')
-	mod_classification = load_model('https://drive.google.com/drive/folders/1058brRW8MhREC-B9GY76WJowYKwfqdbp?usp=drive_link')
+    mod_classification = load_model('https://drive.google.com/drive/folders/1058brRW8MhREC-B9GY76WJowYKwfqdbp?usp=drive_link')
     mod_segmentation   = load_model('./streamlit_app/assets/models/mask_detection_20240130')
 
     # Init pour la gestion des images sélectionnées dans la liste ou chargées
