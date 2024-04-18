@@ -1,7 +1,7 @@
 keras==2.14.0
 matplotlib==3.8.0
 numpy==1.26.2
-opencv==4.6.0
+opencv==4.6
 pandas==2.1.4
 pillow==10.0.1
 plotly==5.9.0
