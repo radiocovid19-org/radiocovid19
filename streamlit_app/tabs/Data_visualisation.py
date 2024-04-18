@@ -18,7 +18,7 @@ sidebar_name = "Data Visualisation"
 
 #/home/souma/juin23_cds_radio_covid-main/streamlit_app/tabs/../../data/metadata.csv
 
-df=pd.read_csv("data/metadata.csv",index_col=0)
+df=pd.read_csv("streamlit_app/assets/metadata.csv",index_col=0)
 
 
 #chargment d'un exemple d'image et son masque
