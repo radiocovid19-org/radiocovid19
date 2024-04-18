@@ -23,15 +23,14 @@ df=pd.read_csv("streamlit_app/assets/metadata.csv",index_col=0)
 
 #chargment d'un exemple d'image et son masque
 
-exemple_image = Image.open('data/COVID/images/COVID-13.png')
-
-exemple_mask = Image.open('data/COVID/masks/COVID-13.png')
+exemple_image = Image.open('streamlit_app/assets/radios/COVID-13.png')
+exemple_mask = Image.open('streamlit_app/assets/masks/COVID-13.png')
 
 
 #chargement des images pour étudier la luminosité
-img_sombre  = Image.open('data/COVID/images/COVID-17.png')
-img_moyenne = Image.open('data/COVID/images/COVID-232.png')
-img_claire  = Image.open('data/COVID/images/COVID-195.png')
+img_sombre  = Image.open('streamlit_app/assets/radios/COVID-17.png')
+img_moyenne = Image.open('streamlit_app/assets/radios/COVID-232.png')
+img_claire  = Image.open('streamlit_app/assets/radios/COVID-195.png')
 
 data_sombre = np.array(img_sombre.getdata())
 data_moyenne = np.array(img_moyenne.getdata())
