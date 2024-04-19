@@ -1,54 +1,31 @@
-# ProjectTemplate
+# Analyse de radiographies pulmonaires Covid-19
 
-## Explanations and Instructions
 
-This repository contains the files needed to initialize a project for your [DataScientest](https://datascientest.com/) training.
+## Présentation et Installation
 
-It contains mainly the present README.md file and an application template [Streamlit](https://streamlit.io/).
 
-**README**
+Notre projet s'inscrit dans le cadre de la formation [Data Science](https://datascientest.com/en/data-scientist-course) dispensée par [DataScientest](https://datascientest.com/).
 
-The README.md file is a central element of any git repository. It allows you to present your project, its objectives, and to explain how to install and launch the project, or even how to contribute to it.
+L'objectif étant de  **developper un modèle de deep learning permettant de détecter plus facilement les cas positifs covid en classifiant les images radiographiques pulmonaires.**
 
-You will have to modify different sections of this README.md to include the necessary informations.
+Le jeu de données est composé de 21.165 radiographies thoraciques et leurs masques. Il est mis à disposition [ici](./data).
+ 
 
-- Complete the sections (`## Presentation and Installation` `## Streamlit App`) following the instructions in these sections.
-- Delete this section (`## Explanations and Instructions`)
+Les membres d'équipe:
 
-**Streamlit Application**
+- Frédéric Ferchaud ([GitHub](https://github.com/Fred-FR44) / [LinkedIn](https://www.linkedin.com/in/frederic-ferchaud/))
+- Soumaya Jendoubi Elhabibi ([GitHub](https://github.com/Soumaya-JE) / [LinkedIn](https://www.linkedin.com/in/soumaya-jendoubi-273ba4a4/))
 
-A [Streamlit] application template (https://streamlit.io/) is available in the [streamlit_app](streamlit_app) folder. You can use this template to start with your project.
+Pour plus de détails sur le code,veuillez consulter les [notebooks](./notebooks). 
 
-## Presentation and Installation
-
-Complete this section with a brief description of your project, the context (including a link to the DataScientest course), and the objectives.
-
-You can also add a brief presentation of the team members with links to your respective networks (GitHub and/or LinkedIn for example).
-
-**Example:**
-
-This repository contains the code for our project **PROJECT_NAME**, developed during our [Data Scientist training](https://datascientest.com/en/data-scientist-course) at [DataScientest](https://datascientest.com/).
-
-The goal of this project is to **...**
-
-This project was developed by the following team :
-
-- John Doe ([GitHub](https://github.com/) / [LinkedIn](http://linkedin.com/))
-- Martin Dupont ([GitHub](https://github.com/) / [LinkedIn](http://linkedin.com/))
-
-You can browse and run the [notebooks](./notebooks). 
-
-You will need to install the dependencies (in a dedicated environment) :
-
+Les conditions requises pour l'installation peuvent être mises en place à travers :
 ```
 pip install -r requirements.txt
 ```
 
 ## Streamlit App
 
-**Add explanations on how to use the app.**
-
-To run the app (be careful with the paths of the files in the app):
+Afin de mieux utiliser l'application,il faut télécharger les images et les modèles disponibles sur [assets](./streamlit_app/assets)
 
 ```shell
 conda create --name my-awesome-streamlit python=3.9
@@ -57,4 +34,4 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The app should then be available at [localhost:8501](http://localhost:8501).
+L'application sera disponible à [localhost:8501](http://localhost:8501).
