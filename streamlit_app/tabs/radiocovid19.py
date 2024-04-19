@@ -56,7 +56,7 @@ def run():
     st.markdown(f"<style>{style}</style>", unsafe_allow_html=True)
 
     st.title(title)
-    st.text("Ceci est une démonstration d'un projet de Data Science et non un réel outil de diagnostique.")
+    st.write("Attention : Ceci est une démonstration d'un projet de Data Science et non un réel outil de diagnostique.")
 
     col0, col00 = st.columns([4, 1])
     
